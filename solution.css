@@ -1,0 +1,12 @@
+The solution uses a more specific selector to target only the currently hovered list item:
+
+```css
+li {
+  background-color: white;
+}
+
+li:hover {
+  background-color: lightblue;
+}
+```
+This removes the adjacent sibling selector, ensuring that only the hovered list item has its background color changed.
