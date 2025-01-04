@@ -1,0 +1,17 @@
+The following CSS code snippet demonstrates an issue where the hover effect on a list item unintentionally affects subsequent list items.
+
+```css
+li {
+  background-color: white;
+}
+
+li:hover {
+  background-color: lightblue;
+}
+
+li:hover + li {
+  background-color: lightgreen; /* This selector affects the next list item*/
+}
+```
+
+The `li:hover + li` selector unintentionally targets the next sibling list element.  This is a common mistake when attempting to target only the hovered list item itself.
